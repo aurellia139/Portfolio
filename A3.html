@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Profil Saya</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Times New Roman', Times, serif;
+      background-size: cover;
+      background-color: #f2f2f2;
+      color: #ffffff;
+    }
+
+    header {
+      background-color: #333;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+      color: white;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .biodata-box {
+      background-color: rgba(255, 255, 255, 0.95);
+      border: 2px solid rgb(83, 82, 82);
+      border-radius: 17px;
+      padding: 40px;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      max-width: 900px;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    .text {
+      flex: 1;
+      font-size: 18px;
+      color: rgb(44, 43, 43);
+      animation: fadeInLeft 1s ease-out;
+    }
+
+    .text h1 {
+      margin-top: 0;
+      font-size: 28px;
+    }
+
+    .profile-pic {
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid rgb(37, 36, 36);
+      animation: fadeInRight 1s ease-out;
+    }
+
+    /* Animations */
+    @keyframes fadeInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes fadeInRight {
+      from {
+        opacity: 0;
+        transform: translateX(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .biodata-box {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+
+      .profile-pic {
+        margin-bottom: 20px;
+      }
+
+      .text h1 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Biodata</h1>
+  </header>
+
+  <div class="container">
+    <div class="biodata-box">
+      <div class="text">
+        <h1>Hai, saya Nathania!</h1>
+        <p>Perkenalkan nama lengkap saya Nathania Aurellia Stevani, saya adalah siswi SMK Negeri 1 Nglegok. Saya mengambil jurusan TKJ (Teknik Komputer dan Jaringan). Saya sekarang kelas 11, disini saya mengikuti Komunitas IT. Dimana disini  kami belajar banyak materi mengenai IT, dan ada project mengejar materi serta membuat module. Selain kejar materi, kami juga diajari bagaimana cara nya berorganisasi yang baik disini. </p>
+      </div>
+      <img src="aurellia.jpeg" alt="Foto Saya" class="profile-pic">
+    </div>
+  </div> 
+
+</body>
+</html>

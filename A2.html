@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio Saya</title>
+  <style>
+    body {
+      background: url('Logo 2.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Times New Roman', Times, serif;
+      color: #2e2e2e;
+      margin: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 1px;
+      text-align: center;
+    }
+
+    section {
+      padding: 40px 60px;
+      text-align: center;
+    }
+
+    .card {
+      background-color: #ffffffcc;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      margin: 20px auto;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05); /*zoom effect */
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0.4); /*optional */
+    }
+
+    .card h2 {
+      margin-bottom: 10px;
+    }
+
+    .card button {
+      padding: 10px 20px;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .card button:hover {
+      background-color: #555;
+    }
+
+    .back-link {
+      display: flex;
+      justify-content: center;
+      margin: 40px 0;
+    }
+
+    .back-link a {
+      text-decoration: none;
+      background-color: #413f3f;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Portofolio</h1>
+  </header>
+
+  <section>
+
+    <div class="card">
+      <h2>About Me</h2>
+      <p>Deskripsi singkat tentang saya</p>
+      <button onclick="window.location.href='A3.html'">Lihat Detail</button>
+    </div>
+
+    <div class="card">
+      <h2>Certification</h2>
+      <p>Sertifikat yang saya peroleh</p>
+      <button onclick="window.location.href='A4.html'">Lihat Sertifikat</button>
+    </div>
+
+    <div class="card">
+      <h2>Education</h2>
+      <p>Riwayat pendidikan saya</p>
+      <button onclick="window.location.href='A5.html'">Lihat Pendidikan</button>
+    </div>
+  </section>
+
+  <div class="back-link">
+    <a href="A1.html">← Kembali ke Halaman Utama</a>
+  </div>
+
+  <footer>
+    <p>© 2025 Nathania Aurellia Stevani</p>
+  </footer>
+
+</body>
+</html>
